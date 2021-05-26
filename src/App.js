@@ -4,10 +4,10 @@ import React, { useState, useEffect } from 'react';
 import Posts from './components/Posts';
 
 function App() {
-  const [posts, setPosts ] = useState([]);
+  const [ posts, setPosts ] = useState([]);
   const [ loading, setLoading ] = useState(false);
-  const [currentPage, setCurrentPage ] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [ currentPage, setCurrentPage ] = useState(1);
+  const [ postsPerPage, setPostsPerPage ] = useState(10);
 
   useEffect(() => {
     async function fetchPosts () {
